@@ -1,0 +1,40 @@
+@model RelatorioFotograficoDER.Models.ProcessoManutencao
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>ProcessoManutencao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="RelatoriofotograficoId" class="control-label"></label>
+                <input asp-for="RelatoriofotograficoId" class="form-control" />
+                <span asp-validation-for="RelatoriofotograficoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoordenacaoId" class="control-label"></label>
+                <input asp-for="CoordenacaoId" class="form-control" />
+                <span asp-validation-for="CoordenacaoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RelatorioAtesteId" class="control-label"></label>
+                <input asp-for="RelatorioAtesteId" class="form-control" />
+                <span asp-validation-for="RelatorioAtesteId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
